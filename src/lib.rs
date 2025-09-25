@@ -7,9 +7,9 @@
 
    * This data structure has been implemented solely for fun
    * It is not production ready
-   * There are so many methods yet to implement, many optimizations are to be done
-     and still there would be better options available out there due to the overall 
-     design of this data structure
+   * There are so many methods yet to implement, the data structure has to be optimized
+     and still there would be better options available out there due to the overall design
+     of this data structure
 */
 
 use std::marker::PhantomData;
