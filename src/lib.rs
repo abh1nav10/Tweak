@@ -1,9 +1,17 @@
-/* Tweak is a data structure which has heap allocated nodes having a pointer to the next and previous
-   and a head which points to the first node. Upon reaching full capacity - 1
-   the last one starts pointing to the head and upon further insertion the last node is dropped 
-   the new element is inserted which becomes the head if done from the insert_from_head method 
-   and that also has a pointer to the previous node thus completing the cycle.
+/* Tweak is a data structure which has allocates nodes on the heap having a pointer to the next and previous 
+   and the value itself. Tweak itself a head which points to the first node. Upon reaching full capacity - 1,
+   upon insertion from the insert_from_head the last node starts pointing to the head thus completing the cycle 
+   and upon further insertion the last node is dropped the new element is inserted which becomes the head if 
+   done from the insert_from_head method and that also has a pointer to the previous node and the previous node 
+   has a pointer to the new head thus maintaining the cycle.
+
+   * This data structure has been implemented solely for fun
+   * It is not production ready
+   * There are so many methods yet to implement, many optimizations are to be done
+     and still there would be better options available out there due to the overall 
+     design of this data structure
 */
+
 use std::marker::PhantomData;
 use std::ptr::NonNull;
 
