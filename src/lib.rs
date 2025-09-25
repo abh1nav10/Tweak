@@ -1,6 +1,6 @@
-/* Tweak is a data structure which has allocates nodes on the heap having a pointer to the next and previous 
-   and the value itself. Tweak itself a head which points to the first node. Upon reaching full capacity - 1,
-   upon insertion from the insert_from_head the last node starts pointing to the head thus completing the cycle 
+/* Tweak is a data structure which allocates nodes on the heap having a pointer to the next and previous 
+   and the value itself. Tweak itself has a head which points to the first node. Upon reaching (max - 1),
+   on insertion from the insert_from_head the last node starts pointing to the head thus completing the cycle 
    and upon further insertion the last node is dropped the new element is inserted which becomes the head if 
    done from the insert_from_head method and that also has a pointer to the previous node and the previous node 
    has a pointer to the new head thus maintaining the cycle.
